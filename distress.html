@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/storage.js"></script>
+<script src="js/send.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Distresse Psicológico</h2>
+
+<form onsubmit="salvarInstrumento(event,'finalizar')">
+
+<p>1. Tenho me sentido emocionalmente sobrecarregado.</p>
+
+<label><input type="radio" name="dis1" value="1" required>1</label>
+<label><input type="radio" name="dis1" value="2">2</label>
+<label><input type="radio" name="dis1" value="3">3</label>
+<label><input type="radio" name="dis1" value="4">4</label>
+<label><input type="radio" name="dis1" value="5">5</label>
+
+<p>2. Tenho me sentido ansioso ou tenso.</p>
+
+<label><input type="radio" name="dis2" value="1" required>1</label>
+<label><input type="radio" name="dis2" value="2">2</label>
+<label><input type="radio" name="dis2" value="3">3</label>
+<label><input type="radio" name="dis2" value="4">4</label>
+<label><input type="radio" name="dis2" value="5">5</label>
+
+<p>3. Tenho me sentido triste ou desanimado.</p>
+
+<label><input type="radio" name="dis3" value="1" required>1</label>
+<label><input type="radio" name="dis3" value="2">2</label>
+<label><input type="radio" name="dis3" value="3">3</label>
+<label><input type="radio" name="dis3" value="4">4</label>
+<label><input type="radio" name="dis3" value="5">5</label>
+
+<br><br>
+
+<button type="button" onclick="finalizar()">
+
+Finalizar pesquisa
+
+</button>
+
+</form>
+
+</div>
+
+</body>
+
+</html>
