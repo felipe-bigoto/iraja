@@ -44,3 +44,11 @@ line-height: 1.6;
 margin-bottom: 12px;
 
 }
+
+.likert{
+
+display:flex;
+justify-content:space-between;
+margin-bottom:20px;
+
+}
