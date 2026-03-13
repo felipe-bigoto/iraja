@@ -2,17 +2,29 @@ const API_URL = "https://script.google.com/macros/s/AKfycbyYf5pmLjyxdt_EMgwTF2wd
 
 async function finalizar(){
 
-let dados = JSON.parse(localStorage.getItem("dados"))
+let dados = JSON.parse(localStorage.getItem("dados")) || {}
 
 dados.id = crypto.randomUUID()
 
+try{
+
 await fetch(API_URL,{
 method:"POST",
+mode:"no-cors",
+headers:{
+"Content-Type":"application/json"
+},
 body:JSON.stringify(dados)
 })
 
 localStorage.clear()
 
-location.href="obrigado.html"
+window.location.href="obrigado.html"
+
+}catch(e){
+
+alert("Erro ao enviar respostas")
+
+}
 
 }
