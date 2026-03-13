@@ -1,4 +1,4 @@
-const API_URL = "COLE_AQUI_A_URL_DO_SCRIPT"
+const API_URL = "https://script.google.com/macros/s/AKfycbyYf5pmLjyxdt_EMgwTF2wdWtQbqtY5peix6RPK-WMsKP2pAtkKnxs66zCq-MvoRvXkEw/exec"
 
 async function finalizar(){
 
