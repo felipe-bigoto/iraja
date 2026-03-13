@@ -5,6 +5,8 @@
 
 <meta charset="UTF-8">
 
+<title>Termo de Consentimento</title>
+
 <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -13,19 +15,61 @@
 
 <div class="container">
 
-<h2>Termo de Consentimento</h2>
+<h2>Termo de Consentimento Livre e Esclarecido</h2>
+
+<div class="tcle-texto">
+
+<p><strong>Prezado(a) Senhor(a) Diretor(a)/Responsável,</strong></p>
 
 <p>
-
-Sua participação é voluntária e anônima.
-
+Esperamos que esteja bem. Gostaríamos de solicitar sua autorização para que os estudantes da sua instituição participem da pesquisa “Estudos psicométricos do instrumento Indicadores de Resiliência para Adolescentes e Jovens Adultos”.
 </p>
+
+<p>
+O objetivo desta pesquisa é realizar estudos psicométricos de validade e precisão para o instrumento Indicadores de Resiliência para Adolescentes e Jovens Adultos (IRAJA), que visa medir a resiliência em adolescentes e jovens adultos, com idades entre 12 e 30 anos.
+</p>
+
+<p>
+A participação nesta pesquisa é voluntária, isto é, não são previstas vantagens financeiras ou custos aos participantes. A autorização pode ser retirada a qualquer momento, sem prejuízo ou penalidades.
+</p>
+
+<p>
+Todas as informações coletadas serão sigilosas, garantindo que estudantes, famílias e instituições não sejam identificados em qualquer circunstância.
+</p>
+
+<p>
+Os estudantes responderão ao instrumento psicológico em formato digital, em aplicação coletiva, preferencialmente na sala de informática da instituição, em horário previamente agendado com a escola.
+</p>
+
+<p>
+A duração estimada da participação é de aproximadamente 20 minutos.
+</p>
+
+<p>
+A participação consiste em responder perguntas sobre comportamentos, crenças, atitudes e intenções. Eventuais desconfortos poderão ocorrer caso alguma pergunta gere lembranças desagradáveis. Caso isso aconteça, o participante poderá interromper o preenchimento ou desistir da participação sem qualquer penalidade.
+</p>
+
+<p>
+Caso seja necessário, será oferecido acolhimento psicológico sem custo ao participante e encaminhamento para atendimento especializado.
+</p>
+
+<p>
+Este estudo foi aprovado pelo Comitê de Ética em Pesquisa da Universidade Federal de Minas Gerais, sob o número CAAE XXXXXX.
+</p>
+
+<p>
+Pesquisador responsável: Felipe Bigoto da Costa – felipebigoto@ufmg.br
+</p>
+
+</div>
+
+<br>
 
 <label>
 
-<input type="checkbox" id="consent">
+<input type="checkbox" id="aceite">
 
-Li e concordo em participar
+Declaro que li e concordo em participar da pesquisa.
 
 </label>
 
@@ -33,7 +77,7 @@ Li e concordo em participar
 
 <button onclick="continuar()">
 
-Continuar
+Aceito participar
 
 </button>
 
@@ -43,15 +87,17 @@ Continuar
 
 function continuar(){
 
-if(!document.getElementById("consent").checked){
+let aceite = document.getElementById("aceite")
 
-alert("Você precisa aceitar o TCLE.");
+if(!aceite.checked){
 
-return;
+alert("Você precisa aceitar o termo para continuar.")
+
+return
 
 }
 
-location.href="socio.html";
+window.location.href="socio.html"
 
 }
 
