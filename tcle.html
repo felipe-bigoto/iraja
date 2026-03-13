@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Termo de Consentimento</h2>
+
+<p>
+
+Sua participação é voluntária e anônima.
+
+</p>
+
+<label>
+
+<input type="checkbox" id="consent">
+
+Li e concordo em participar
+
+</label>
+
+<br><br>
+
+<button onclick="continuar()">
+
+Continuar
+
+</button>
+
+</div>
+
+<script>
+
+function continuar(){
+
+if(!document.getElementById("consent").checked){
+
+alert("Você precisa aceitar o TCLE.");
+
+return;
+
+}
+
+location.href="socio.html";
+
+}
+
+</script>
+
+</body>
+
+</html>
